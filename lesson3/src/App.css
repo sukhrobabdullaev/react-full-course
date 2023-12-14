@@ -1,0 +1,18 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper {
+    margin-top: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav_list {
+    display: flex;
+    gap: 15px;
+}
