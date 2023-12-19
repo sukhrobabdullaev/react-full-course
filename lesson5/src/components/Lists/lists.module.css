@@ -1,0 +1,14 @@
+.lists {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.student {
+    background-color: bisque;
+    padding: 20px;
+}
+
+.student p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

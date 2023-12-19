@@ -1,0 +1,36 @@
+.list {
+  margin-top: 20px;
+}
+
+.list li {
+    background-color: rgb(229, 178, 11);
+    margin-top: 8px;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.flex {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex button {
+  background-color: rgb(247, 15, 38);
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  appearance: none;
+}
+.flex button:nth-of-type(2) {
+  background-color: rgb(1, 255, 1);
+}
+
+.read {
+  text-decoration: underline;
+}
+
+.delete {
+  text-decoration: line-through;
+}
