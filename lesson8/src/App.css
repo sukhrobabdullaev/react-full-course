@@ -1,42 +1,120 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+
+.wrapper h1 {
   text-align: center;
+  font-family: "Rubik Scribble";
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-family: "Rubik Bubbles";
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.event-item {
+  background-color: orange;
+  color: red;
+  padding: 20px;
+  font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.event-item h3 span:nth-of-type(1) {
+  color: green;
+}
+.event-item h3 span:nth-of-type(2) {
+  color: red;
 }
 
-.card {
-  padding: 2em;
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+.btns button {
+  background: none;
+  border: none;
+  background-color: beige;
+  cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+.btns button:first-of-type:hover {
+  transform: scale(1.2);
+}
+.btns button:last-of-type:hover {
+  transform: rotate(20deg);
+}
+
+.controls {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  overflow: none;
+  background-color: red;
+  padding: 6px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.controls button:active {
+  transform: translateY(-2px);
+}
+
+.controls button:last-of-type {
+  background-color: green;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1111; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
