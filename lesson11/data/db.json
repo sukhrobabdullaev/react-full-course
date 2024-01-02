@@ -1,0 +1,16 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "name": "Uzbekistan",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1024px-Flag_of_Uzbekistan.svg.png",
+      "desc": "Uzbekistan (Uzbek: Oʻzbekiston, Ўзбекистон; UK: /ʊzˌbɛkɪˈstɑːn, ʌz-, -ˈstæn/, US: /ʊzˈbɛkɪstæn, -stɑːn/ ⓘ),[10][11] officially the Republic of Uzbekistan (Oʻzbekiston Respublikasi, Ўзбекистон Республикаси), is a country located in Central Asia"
+    },
+    {
+      "id": 2,
+      "name": "Turkiya",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI0FFJ_83CVxD4k_5K-K8x1zj5CHiIeQEk4GVOt7oYRg&s",
+      "desc": "Turkey, officially the Republic of Türkiye (Turkish: Türkiye Cumhuriyeti [ˈtyɾcije dʒumˈhuːɾijeti] ⓘ), is a country in Southeast Europe and West Asia. It is mainly on the Anatolian Peninsula in West Asia, with a small portion called East Thrace on the Balkan Peninsula in Southeast Europe."
+    }
+  ]
+}
