@@ -6,8 +6,8 @@ import Albums from './components/Albums';
 const App = () => {
   return (
     <div className='app'>
-      {/* <Countries/> */}
-      <Albums/>
+      <Countries/>
+      {/* <Albums/> */}
     </div>
   )
 }

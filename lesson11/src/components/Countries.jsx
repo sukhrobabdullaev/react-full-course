@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 
 const Countries = () => {
-  const [countries, setCountries] = useState(null);
+  const [countries, setCountries] = useState([]);
 
   useEffect(() => {
     function getData() {
-      fetch("http://localhost:3000/countries")
+      fetch("../../data/db.json")
         .then((res) => res.json())
-        .then((data) => setCountries(data))
-        .catch(err => console.log(err))
+        .then((data) => {
+          // console.log(data.countries);
+          setCountries(data.countries)
+        })
+        .catch((err) => console.log(err));
     }
     getData();
   }, []);
@@ -17,16 +20,15 @@ const Countries = () => {
     <div>
       <h1 style={{ fontSize: 40 }}>Countries</h1>
       <ul>
-        {countries &&
-          countries.map((country) => {
-            return (
-              <li key={country.id}>
-                <h2>{country.name}</h2>
-                <img src={country.img} alt={country.name} width={200}/>
-                <p>{country.desc}</p>
-              </li>
-            );
-          })}
+        {countries.map((country) => {
+          return (
+            <li key={country.id}>
+              <h2>{country.name}</h2>
+              <img src={country.img} alt={country.name} width={200} />
+              <p>{country.desc}</p>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
