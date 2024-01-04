@@ -1,0 +1,12 @@
+body {
+  background: rgb(30, 125, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 125, 195, 1) 46%,
+    rgba(0, 255, 42, 1) 100%
+  );
+  color: #fff;
+  font-weight: 900;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
